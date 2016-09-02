@@ -20,7 +20,7 @@ composer require superbalist/php-pubsub
 * Local (bundled)
 * /dev/null (bundled)
 * Redis - https://github.com/Superbalist/php-pubsub-redis
-* Kafka - link pending
+* Kafka - https://github.com/Superbalist/php-pubsub-kafka
 
 ## Usage
 
