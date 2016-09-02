@@ -1,0 +1,7 @@
+version: '2'
+services:
+  php-pubsub:
+    build: .
+    volumes:
+      - ./src:/opt/php-pubsub/src
+      - ./examples:/opt/php-pubsub/examples
