@@ -21,6 +21,7 @@ composer require superbalist/php-pubsub
 * /dev/null (bundled)
 * Redis - https://github.com/Superbalist/php-pubsub-redis
 * Kafka - https://github.com/Superbalist/php-pubsub-kafka
+* Google Cloud - https://github.com/Superbalist/php-pubsub-google-cloud
 
 ## Usage
 
