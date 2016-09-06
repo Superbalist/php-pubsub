@@ -23,6 +23,12 @@ composer require superbalist/php-pubsub
 * Kafka - https://github.com/Superbalist/php-pubsub-kafka
 * Google Cloud - https://github.com/Superbalist/php-pubsub-google-cloud
 
+## Integrations
+
+Want to get started quickly? Check out some of these integrations:
+
+* Laravel - https://github.com/Superbalist/laravel-pubsub
+
 ## Usage
 
 ```php
