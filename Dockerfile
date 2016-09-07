@@ -28,8 +28,8 @@ RUN curl -o /tmp/composer-setup.php https://getcomposer.org/installer \
 COPY composer.json /opt/php-pubsub/
 RUN composer install --no-autoloader --no-scripts --no-interaction
 
-COPY src /opt/php/pubsub/
-COPY examples /opt/php/pubsub
+COPY src /opt/php-pubsub/
+COPY examples /opt/php-pubsub/
 
 RUN composer dump-autoload --no-interaction
 
