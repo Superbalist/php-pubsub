@@ -42,6 +42,7 @@ class LocalPubSubAdapter implements PubSubAdapterInterface
      * Return all subscribers on the given channel.
      *
      * @param string $channel
+     *
      * @return array
      */
     public function getSubscribersForChannel($channel)
