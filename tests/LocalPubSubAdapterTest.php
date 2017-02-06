@@ -17,7 +17,6 @@ class LocalPubSubAdapterTest extends TestCase
         $this->assertEmpty($subscribers);
 
         $handler = function ($message) {
-
         };
 
         $adapter->subscribe('test_channel', $handler);

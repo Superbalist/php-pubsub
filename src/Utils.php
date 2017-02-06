@@ -8,6 +8,7 @@ abstract class Utils
      * Serialize a message as a string.
      *
      * @param mixed $message
+     *
      * @return string
      */
     public static function serializeMessage($message)
@@ -27,6 +28,7 @@ abstract class Utils
      * If this doesn't work, the payload is returned as is.
      *
      * @param string $payload
+     *
      * @return mixed
      */
     public static function unserializeMessagePayload($payload)
