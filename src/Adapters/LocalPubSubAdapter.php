@@ -33,11 +33,8 @@ class LocalPubSubAdapter implements PubSubAdapterInterface
      */
     public function publish($channel, $message)
     {
-        $messages = is_array($message) ? $message : [$message];
-        foreach ($messages as $message) {
-            foreach ($this->getSubscribersForChannel($channel) as $handler) {
-                call_user_func($handler, $message);
-            }
+        foreach ($this->getSubscribersForChannel($channel) as $handler) {
+            call_user_func($handler, $message);
         }
     }
 

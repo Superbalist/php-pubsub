@@ -42,12 +42,6 @@ $adapter->subscribe('my_channel', function ($message) {
 
 // publish messages
 $adapter->publish('my_channel', 'Hello World!');
-
-$messages = [
-    'This is the first message',
-    '.. and this is another message',
-];
-$adapter->publish('my_channel', $messages);
 ```
 
 ## Writing an Adapter
