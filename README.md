@@ -42,6 +42,13 @@ $adapter->subscribe('my_channel', function ($message) {
 
 // publish messages
 $adapter->publish('my_channel', 'Hello World!');
+
+// publish multiple messages
+$messages = [
+    'message 1',
+    'message 2',
+];
+$adapter->publishBatch('my_channel', $messages);
 ```
 
 ## Writing an Adapter
@@ -66,6 +73,14 @@ public function subscribe($channel, callable $handler);
  * @param mixed $message
  */
 public function publish($channel, $message);
+
+/**
+ * Publish multiple messages to a channel.
+ *
+ * @param string $channel
+ * @param array $messages
+ */
+public function publishBatch($channel, array $messages);
 ```
 
 ## Examples

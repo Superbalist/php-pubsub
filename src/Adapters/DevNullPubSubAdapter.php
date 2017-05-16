@@ -27,4 +27,15 @@ class DevNullPubSubAdapter implements PubSubAdapterInterface
     {
         // your message is going to /dev/null
     }
+
+    /**
+     * Publish multiple messages to a channel.
+     *
+     * @param string $channel
+     * @param array $messages
+     */
+    public function publishBatch($channel, array $messages)
+    {
+        // your messages are going to /dev/null
+    }
 }

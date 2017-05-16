@@ -19,4 +19,12 @@ interface PubSubAdapterInterface
      * @param mixed $message
      */
     public function publish($channel, $message);
+
+    /**
+     * Publish multiple messages to a channel.
+     *
+     * @param string $channel
+     * @param array $messages
+     */
+    public function publishBatch($channel, array $messages);
 }

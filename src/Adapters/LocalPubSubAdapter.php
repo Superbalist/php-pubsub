@@ -39,6 +39,19 @@ class LocalPubSubAdapter implements PubSubAdapterInterface
     }
 
     /**
+     * Publish multiple messages to a channel.
+     *
+     * @param string $channel
+     * @param array $messages
+     */
+    public function publishBatch($channel, array $messages)
+    {
+        foreach ($messages as $message) {
+            $this->publish($channel, $message);
+        }
+    }
+
+    /**
      * Return all subscribers on the given channel.
      *
      * @param string $channel
